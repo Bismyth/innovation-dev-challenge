@@ -11,6 +11,8 @@ Typically we would use docker and postgres instead of sqlite, however to ensure 
 
 ## How to Run
 
+The project has been designed to run in Windows.
+
 The project has already been setup and several scripts have been provided to start up the backend and frontend. To ensure you can use the project, the following dependencies will need to be installed
 
 1. Python 3.7 and PIP or greater https://www.python.org/downloads/
@@ -18,14 +20,18 @@ The project has already been setup and several scripts have been provided to sta
 
 After these are installed, you should be able to run the following script to initialise the backend:
 
-1. `backend/init_backend.ps1`
+Note: to run powershell scripts you may need to run powershell as an admin and enable scripts `Set-ExecutionPolicy unrestricted`. Please read through the scripts as standard practice to ensure for yourself that they are not malicious.
+
+1. `init_backend.ps1`
 
 After this script runs succesfully you should not run it again.
 
 Finally run the following scripts to start the frontend and backend services:
 
-1. `backend/start_backend.ps1`
-2. `frotnend/start_frontend.ps1`
+1. `start_backend.ps1`
+2. `start_frontend.ps1`
+
+Ensure to run the frontend script in the frontend folder and the backend script in the backend folder.
 
 ## Project Structure
 
