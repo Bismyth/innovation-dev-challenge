@@ -1,0 +1,107 @@
+.v-application {
+  background-color: #fafafa !important;
+}
+.card-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.table-header {
+  color: black !important;
+}
+
+.page-height {
+  height: calc(100vh - 108px);
+  overflow: hidden;
+}
+
+.max-page-height {
+  max-height: calc(100vh - 108px);
+  overflow: hidden;
+}
+
+.fixed-table {
+  height: 100%;
+  overflow: hidden;
+  // border: solid blue;
+
+  display: flex;
+  flex-direction: column;
+
+  .v-data-table__wrapper {
+    height: 100%;
+    // border: solid green;
+  }
+
+  .v-data-footer {
+    margin-right: 0 !important;
+  }
+
+  .sticky-foot {
+    position: sticky;
+    bottom: 0;
+    background: white;
+
+    * {
+      border-top: solid #ddd 2px;
+    }
+  }
+}
+
+table .totals * {
+  font-size: 16px !important;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+.right-input input { 
+  text-align: right;
+}
+
+.center-input input {
+  text-align: center;
+
+}
+
+.blue-input { 
+  color: blue !important;
+}
+.blue-input input {
+  color: blue !important;
+}
+
+.theme--light.v-input--is-disabled {
+  color: #000 !important;
+}
+
+.theme--light.v-input--is-disabled input {
+  color: #000 !important;
+}
+
+.blue-input.v-input--is-disabled { 
+  color: blue !important;
+}
+.blue-input.v-input--is-disabled input {
+  color: blue !important;
+}
+
+html {
+  overflow: hidden !important;
+}
+
+
+.circled-text {
+  margin-top:6px;
+  padding-top:4px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  font: 12px Arial, sans-serif;
+  font-weight: bold;
+
+}
