@@ -3,8 +3,8 @@
 The following is a simplified version of the stack that we use on a daily bases. It is as follows:
 
 1. Vue.js (Nuxt)
-2. FastAPI (Python)
-3. Sqlalchemy (Pyhton ORM)
+2. FastAPI (Python) https://fastapi.tiangolo.com/
+3. Sqlalchemy (Pyhton ORM) https://docs.sqlalchemy.org/en/14/
 4. SQLITE
 
 Typically we would use docker and postgres instead of sqlite, however to ensure ease of use in this case we have removed them.
@@ -64,7 +64,7 @@ The commands should be run with the python virtual enviroment active.
 
 #### Summary
 
-Examples of each of these steps are included in the project so you can understand how they are used.
+Examples of each of these steps are included in the project so you can understand how they are used. If new files are included in any of these folders except routes, the file will need to be imported in the `__init__.py` file.
 
 ### Frontend
 
