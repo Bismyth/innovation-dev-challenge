@@ -4,7 +4,7 @@ The following is a simplified version of the stack that we use on a daily bases.
 
 1. Vue.js (Nuxt)
 2. FastAPI (Python) https://fastapi.tiangolo.com/
-3. Sqlalchemy (Pyhton ORM) https://docs.sqlalchemy.org/en/14/
+3. Sqlalchemy (Python ORM) https://docs.sqlalchemy.org/en/14/
 4. SQLITE
 
 Typically we would use docker and postgres instead of sqlite, however to ensure ease of use in this case we have removed them.
@@ -39,17 +39,17 @@ The project has been divided into a frontend and a backend, each section runs in
 
 ### Backend
 
-The backend is made up of several folders each holding a part of the overall backend process
+The backend is made up of several folders each holding a part of the overall backend process.
 
 #### 1. Routes
 
-Routes holds the fastapi implementation that defines the different endpoints available from the backend. These endpoints act as entrypoints to run logic and fetch and store data. When a JSON is sent to the endpoint, the functon has a parameter matching the data. This paramter is types using the validation model for this data. If the data does not match the validation model, the backend will return error 422.
+Routes holds the fastapi implementation that defines the different endpoints available from the backend. These endpoints act as entrypoints to run logic and fetch and store data. When a JSON is sent to the endpoint, the functon has a parameter matching the data. This parameter is types using the validation model for this data. If the data does not match the validation model, the backend will return error 422.
 
-The endpoint also defines a response validation model, this is used to validate data coming out of the app and to show or hide certain fields to the response. The backend will attempt to translate the object being returned into this format and will only include the listed fields.
+The endpoint also defines a response validation model, this is used to validate data coming out of the app and to show or hide certain fields in the response. The backend will attempt to translate the object being returned into this format and will only include the listed fields.
 
 #### 2. Models
 
-This folder holds the validation models used in recieving and sending data to and from the backend. The python package Pydantic is used as a base of these models. Each class is a different validation object, each property has a type assigned to allow the validators to check type, i.e. `id : int`. If the property has the following notation `id : int = None` then the value is not required but will be used if present, properties without this notation are required by default and if they are not present in the web request, error 422 will be returned by the backend.
+This folder holds the validation models used when recieving and sending data to and from the backend. The python package Pydantic is used as a base of these models. Each class is a different validation object, each property has a type assigned to allow the validators to check type, i.e. `id : int`. If the property has the following notation `id : int = None` then the value is not required but will be used if present, properties without this notation are required by default and if they are not present in the web request, error 422 will be returned by the backend.
 
 #### 3. Schemas
 
@@ -89,7 +89,7 @@ This will include:
 5. Frontend component or page to add the data
 6. Some method of deleting data from the frontend
 
-An example of this is alread included in the project, so feel free to use that as a starting point for the new table. The table can be anything you want, however it should be something that can be shown in a list or a table and for which multiple rows can be added and it should include a numerical value that can be totaled.
+An example of this is already included in the project, so feel free to use that as a starting point for the new table. The table can be anything you want, however it should be something that can be shown in a list or a table and for which multiple rows can be added and it should include a numerical value that can be totaled.
 
 As a further extension of what is already present, the new table should have the following:
 
@@ -98,7 +98,7 @@ As a further extension of what is already present, the new table should have the
 
 Submissions will be considered on how well they demostrate the full stack development skills.
 
-This task would typically take one of our experienced developers no more than 30 minutes, however familiarity with the stack and technologies will be a limiting factor. We ask you to keep your effort to a time below 4 Hours as we don't want to take up too much of your time and want to provide an accurate demonstartion of your abilities.
+This task would typically take one of our experienced developers no more than 30 minutes, however familiarity with the stack and technologies will be a limiting factor. We ask you to keep your effort to a time below 4 Hours as we don't want to take up too much of your time and want to provide an accurate demonstration of your abilities.
 
 If you are unable to complete parts of the task, but know how to do it in another language or framework, you can include code snippets or files outlining how you do it in that in that framework. We understand that you may not be familiar with the languages or packages we use so we will not consider knowledge of the packages involved to seriously.
 
