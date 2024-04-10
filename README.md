@@ -78,6 +78,8 @@ An example of a basic frontend page and component, along with backend integratio
 
 ## Task
 
+### First
+
 The task is to add another database table to the project and have the data come through to the frontend.
 
 This will include:
@@ -100,6 +102,12 @@ Submissions will be considered on how well they demostrate the full stack develo
 
 This task would typically take one of our experienced developers no more than 30 minutes, however familiarity with the stack and technologies will be a limiting factor. We ask you to keep your effort to a time below 4 Hours as we don't want to take up too much of your time and want to provide an accurate demonstration of your abilities.
 
-If you are unable to complete parts of the task, but know how to do it in another language or framework, you can include code snippets or files outlining how you do it in that in that framework. We understand that you may not be familiar with the languages or packages we use so we will not consider knowledge of the packages involved to seriously.
+### Second
+
+Improve the navigation of the applicaiton. Create a basic landing page that the user will visit when the load the base url and add navigation options between the pages of the app that persist between pages.
+
+This task is to demonstrate your frontend UI design skills and your ability to create a simple and easy to use interface.
+
+If you are unable to complete parts of the tassk, but know how to do it in another language or framework, you can include code snippets or files outlining how you do it in that in that framework. We understand that you may not be familiar with the languages or packages we use so we will not consider knowledge of the packages involved to seriously.
 
 Please feel free to email me if you have any issues getting the project started or understanding the project structure, adam.bardsley@innovation-i.com.au.
