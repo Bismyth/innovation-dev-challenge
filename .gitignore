@@ -95,3 +95,5 @@ sw.*
 
 /backend/exports/
 /backend/uploads/
+
+*.db
